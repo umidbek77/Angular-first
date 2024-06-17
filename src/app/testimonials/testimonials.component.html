@@ -1,0 +1,14 @@
+<div class="testimonials-container">
+  <div class="testimonial-card" *ngFor="let testimonial of testimonials">
+    <img class="avatar" [src]="testimonial.image" alt="Avatar">
+    <h2 class="title">{{testimonial.title}}</h2>
+    <h3 class="subtitle">{{testimonial.subtitle}}</h3>
+    <i class="quote-icon">“</i>
+    <p class="paragraph">{{testimonial.text}}</p>
+  </div>
+  <div class="navigation-buttons">
+    <button class="nav-btn">&larr;</button>
+    <button class="nav-btn">&rarr;</button>
+  </div>
+</div>
+
